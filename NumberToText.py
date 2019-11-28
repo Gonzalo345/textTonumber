@@ -9,18 +9,11 @@ print(mensaje)
 print('\n\nComienzo del procesamiento')
 
 number = re.findall(r"\w+", mensaje, re.MULTILINE)
-#for w in number:
+for w in number:
     #print(w)
-    #print (chr(w)) #Valor que me da
-a = '23'
-b = int(a)
-print(chr(a))
-#print(matches)
-#xx = "guru99,education is fun"
-#r1 = re.findall(r"^\w+",xx)
-#print(r1)
-#fichero.seek(0)   # Puntero al principio
-#mensaje = fichero.read(2)  # Leemos  carácteres
-#print(mensaje)
-
+    wi = int(w) + 96
+    if w == '27':
+        print(" ", end="")
+    else:
+        print (chr(wi),end="") #Valor que me da
 fichero.close()
